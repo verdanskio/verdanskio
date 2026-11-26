@@ -1,8 +1,8 @@
 {
   "build_date": "2026-11-26",
   "kind": "experimental Godot HTML5 prototype",
-  "download_bytes": 696852713,
-  "pack_sha256": "ff0d390a0ebedbce7112b24aa5afae7def0af0d4e16c7768342a1cbaa09275e8",
+  "download_bytes": 697803899,
+  "pack_sha256": "253f3f65d1e1c8ed0adcdd99c840c0f6c2926c16aa5af7f41c601b3143253d74",
   "checks": {
     "main_menu_ready": true,
     "verdansk_ready": true,
@@ -10,7 +10,7 @@
   },
   "map_and_console_rendered_and_input_tested": true,
   "runtime_or_javascript_error_messages": 0,
-  "known_webgl_draw_buffer_warnings": 169,
+  "known_webgl_draw_buffer_warnings": 256,
   "full_match_or_120_bot_browser_test_performed": false,
   "audio": {
     "playback": "Web Audio sample",
@@ -42,6 +42,30 @@
     "original_explosion_vfx_restored": false,
     "original_detonation_audio_restored": false,
     "native_ik_and_full_equipment_skinning_parity": false,
-    "bounded_shared_equipment_material_cache": true
+    "bounded_shared_equipment_material_cache": true,
+    "full_original_plate_raise_insert_drop_clips": true,
+    "full_original_two_handed_frag_clips": true,
+    "original_plate_notify_audio": true,
+    "original_frag_pin_audio": true,
+    "rifle_hidden_during_equipment": true,
+    "original_frag_texture_layers_connected": 5
+  },
+  "revision": "full-equipment-night-fov",
+  "settings_update": {
+    "fov_slider_degrees": [
+      60,
+      120
+    ],
+    "real_light_day_night_console_commands": [
+      "set_night",
+      "set_day"
+    ],
+    "deployment_countdown_seconds": 30,
+    "tree_models_with_source_bark_collision_verified": 31,
+    "browser_lighting_brightness": {
+      "day": 110.94499234068627,
+      "night": 26.00544500612745,
+      "restored_day": 110.88606234681373
+    }
   }
 }

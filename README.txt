@@ -34,23 +34,26 @@ The build reached the main menu and local Verdansk warmup with 21 participants. 
 
 Audio update: explicit Web Audio sample playback and gesture resume. Actual menu-music output was measured in Chromium; the earlier stream build produced zero output.
 
-## Interaction update â€” 26 November 2026
+## Interaction update - 26 November 2026
 
 - Mouse wheel zooms the tactical map under the cursor. Drag to pan; left-click to place a local ping; right-click to remove it. The recovered original ping image and location/confirmation audio are used. Pings appear on the map, minimap and in the world.
 - Coarse original terrain remains visible until the detailed tile is resident, reducing the blue circular holes. Original cloud texture is retained with capped sky fog blending.
 - Step traversal and narrow fence detection are improved. A nine-step staircase and 1.5-metre fence passed the GPU fixture; this does not verify every source building or door.
-- Original supply-box opening now ejects 3D loot. Nearby supplies enter inventory; use E to take/equip weapons and G to throw a recovered frag model. Movement, outline, pickup and grenade logic are reconstructed Godot behavior. Two original pickup material bindings and original loot/grenade effect sound bindings remain unresolved.
+- Original supply-box opening now ejects 3D loot. Nearby supplies enter inventory; use E to take/equip weapons and G to throw a recovered frag model. Movement, outline, pickup and grenade logic are reconstructed Godot behavior. Some pickup material bindings and the original frag detonation sound remain unresolved.
 - Normal sprint includes the recovered original static offset plus movement loop.
 - Original dust and bullet-hole textures have not been positively identified. No temporary impact textures have been added.
 
 The updated browser reached the menu and Verdansk with no captured runtime/JavaScript errors. Music output was measured above zero. Known WebGL draw-buffer warnings and streaming stutter remain; full-match and 120-bot stability were not tested.
 
-## Stair, ping and equipment correction - 26 November 2026
+## Equipment, lighting and loading update - 26 November 2026
 
-- Actual player movement with W and no jump input climbed the original concrete steps (model 31694), full construction staircase (32421), and narrow wooden step (33189). Capsule edge contacts and temporary loss of the floor flag no longer disable step assistance. This is not a verification of every source building.
-- The world ping uses the recovered original generic waypoint pin. It remains visible at a screen edge when behind the camera. Placement uses the original confirmation sample. An original removal sound is not yet resolved.
-- Press 4 to insert an armor plate; hold 4 to continue. Armor/inventory change at the insertion stage, rather than immediately. Fire, reload or weapon selection interrupt an unfinished plate without spending it. Original 80-frame hand keyframes and armor-plate geometry/material are connected.
-- Press/hold G to pull and cook a frag; release G to throw. Quick taps finish the pin-pull first. Holding too long detonates it in hand. Original 12-frame pull and 31-frame throw clips, source grenade geometry/base material, and original bounce audio are connected. Detonation applies distance/line-of-sight damage.
-- Native gesture IK/blending, separate pin/lever skin behavior, native explosive damage tuning, original detonation sound and original explosion VFX remain unresolved. No unrelated or procedural explosion effect has been substituted. Existing original-only dust/bullet-decal work remains pending.
+- Press 4 to insert a plate; hold 4 to repeat. The original raise, insert-cycle and drop clips replace the earlier gesture. The source open, raise, insertion and close sound events follow the recovered animation notifies. The rifle is hidden throughout the action and restored afterward. Inventory changes at the original insertion notify. Fire/reload/weapon switching can interrupt an unfinished plate without spending it.
+- G uses the original two-handed mobile frag preparation, hold and throw clips. It does not use a flashbang animation. Quick taps finish preparation before release; holding G cooks the fuse. The recovered original player pin-pull sample and original bounce samples are connected.
+- Five original smoke/spark flipbook atlases were recovered through the original frag particle system's material references. Godot emission, blending and timing are reconstructed. Only low-resolution local stream levels were available; the complete original particle graph is not ported. The exact detonation sound and separate pin/lever skin animation remain unresolved.
+- Escape > Settings includes a 60-120 degree FOV slider, applied while paused and saved locally.
+- Console commands set_night and set_day change actual directional light, ambient illumination, sky exposure and atmospheric scattering. Day restores the stored daytime state. Night is a reconstructed moonlit preset, not an original recovered night map.
+- The deployment countdown is 30 seconds. Streaming continues during this time; this does not guarantee every distant asset is resident.
+- Collision generation now includes opaque source bark geometry for all 31 imported tree models. Transparent foliage and billboard impostors remain excluded. This validates the model collision builders, not every placement across the entire map.
+- Full player movement without jumping previously passed three original stair meshes. The original world waypoint pin and confirmation sound remain connected.
 
-Equipment behavior and actual fire-input interruption passed native GPU tests. The final browser build was checked separately for menu/Verdansk startup, map/ping controls and nonzero music output; a complete browser match or 120-bot run was not performed.
+Validation: native GPU action/inventory/interruption and source-effect cleanup fixtures; 31 tree-model collision builders; reversible light changes; paused FOV; browser main menu and Verdansk startup; pointer lock, map, console commands and FOV interaction; nonzero music output. Known WebGL draw-buffer warnings remain. A full match and 120 bots have not been validated.
