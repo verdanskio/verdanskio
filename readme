@@ -1,39 +1,24 @@
-# Warzone Mobile Offline – Godot Web Port
+WARZONE MOBILE OFFLINE – GODOT WEB PORT
 
-An experimental **Godot Engine** port of my offline *Warzone Mobile* project. Built using locally extracted game assets, this version is adapted to run directly in a modern web browser.
+An experimental Godot Engine port of my offline Warzone Mobile project. Built using locally extracted game assets, this version is adapted to run directly in a modern web browser.
 
 The goal of this project is to preserve and explore the game's maps, modes, and core gameplay in a standalone environment—completely independent of the original online servers. The current build focuses on local gameplay, offline bot support, and smooth browser compatibility.
 
----
+FEATURES
+• Browser-Ready: Playable directly in a modern web browser
+• Powered by Godot: Built with Godot Engine
+• Original Assets: Uses locally extracted assets from the original game
+• 100% Offline: Local gameplay with no server connection required
+• Bot Support: Includes functional offline bots
 
-## ✨ Features
-* **Browser-Ready:** Playable directly in a modern web browser without installation.
-* **Powered by Godot:** Rebuilt and adapted using the Godot Engine.
-* **Original Assets:** Utilizes locally extracted assets from *Warzone Mobile*.
-* **100% Offline:** Local gameplay with zero connection to official servers required.
-* **Bot Support:** Includes functional offline bots for solo matches.
+CONTROLS & KEYBINDS
+[V] Toggle third-person view
+[K] Toggle flight mode
+[M] Open minimap
+[²] Open developer console
 
----
+PROJECT STATUS
+This project is still under development. Some maps, textures, menus, shaders, audio, and gameplay systems may be incomplete or behave differently from the original mobile version. Performance depends on your browser, operating system, and graphics hardware.
 
-## 🎮 Controls & Keybinds
-
-| Key | Action |
-| :--- | :--- |
-| **`V`** | Toggle third-person view |
-| **`K`** | Toggle flight mode |
-| **`M`** | Open minimap |
-| **`²`** | Open developer console |
-
----
-
-## 🚧 Project Status
-This project is **actively under development**. Because it is an experimental port:
-* Some maps, textures, menus, shaders, audio, and gameplay systems may be incomplete or behave differently than the original mobile release.
-* Overall performance and stability depend heavily on your web browser, operating system, and graphics hardware.
-
----
-
-## ⚠️ Disclaimer
-This is an **unofficial, non-commercial fan and preservation project**. It is not affiliated with, endorsed by, or sponsored by Activision, Call of Duty, or any related studios. 
-
-All referenced trademarks and original game assets belong to their respective owners. This repository contains only material that I am authorized to distribute.
+DISCLAIMER
+This is an unofficial, non-commercial fan and preservation project. It is not affiliated with, endorsed by, or sponsored by Activision, Call of Duty, or any related studio. All referenced trademarks and original game assets belong to their respective owners. This repository contains only material that I am authorized to distribute.
