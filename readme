@@ -11,6 +11,11 @@ Features
 - Bot support
 - No connection to the original game servers required
 
+Keybinds
+Press V to enable third person
+Press K to fly
+Press M to open the minimap
+
 Project Status
 This project is still under development. Some maps, textures, menus, shaders, audio and gameplay systems may be incomplete or behave differently from the original mobile version. Performance depends on the browser, operating system and graphics hardware.
 
