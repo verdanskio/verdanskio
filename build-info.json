@@ -1,8 +1,8 @@
 {
   "build_date": "2026-11-26",
   "kind": "experimental Godot HTML5 prototype",
-  "download_bytes": 696328247,
-  "pack_sha256": "5aa708983ad95bd93679b7b08c14e9e9dba285f7dde756176500b0462f33cef3",
+  "download_bytes": 696628633,
+  "pack_sha256": "540815c9f87c1f7ee8e705142dd89bdfd954f7b1d5242787723ad1c72dfd424e",
   "checks": {
     "main_menu_ready": true,
     "verdansk_ready": true,
@@ -10,12 +10,24 @@
   },
   "map_and_console_rendered_and_input_tested": true,
   "runtime_or_javascript_error_messages": 0,
-  "known_webgl_draw_buffer_warnings": 79,
+  "known_webgl_draw_buffer_warnings": 137,
   "full_match_or_120_bot_browser_test_performed": false,
   "audio": {
     "playback": "Web Audio sample",
-    "measured_music_rms": 0.038955054586922645,
+    "measured_music_rms": 0.041831891640563786,
     "context_state": "running",
     "user_gesture_resume": true
+  },
+  "interactions": {
+    "map_zoom_pan_and_original_ping_icon_audio": true,
+    "map_labels_and_markers_layering_corrected": true,
+    "resident_terrain_fallback_mask": true,
+    "stairs_and_1_5m_fence_gpu_fixture_pass": true,
+    "physical_original_model_loot_and_inventory_equip_fixture_pass": true,
+    "original_sprint_base_pose": true,
+    "original_dust_and_bullet_decal_identified": false,
+    "temporary_impact_textures_used": false,
+    "all_source_doors_verified": false,
+    "original_money_plate_material_bindings_complete": false
   }
 }

@@ -33,3 +33,14 @@ Use the local export report and browser-test report for the actual checks perfor
 The build reached the main menu and local Verdansk warmup with 21 participants. Pointer lock, map and console input were checked. WebGL draw-buffer warnings remain and rendering/performance are experimental. A full browser match and 120 bots have not been validated. See `build-info.json`.
 
 Audio update: explicit Web Audio sample playback and gesture resume. Actual menu-music output was measured in Chromium; the earlier stream build produced zero output.
+
+## Interaction update — 26 November 2026
+
+- Mouse wheel zooms the tactical map under the cursor. Drag to pan; left-click to place a local ping; right-click to remove it. The recovered original ping image and location/confirmation audio are used. Pings appear on the map, minimap and in the world.
+- Coarse original terrain remains visible until the detailed tile is resident, reducing the blue circular holes. Original cloud texture is retained with capped sky fog blending.
+- Step traversal and narrow fence detection are improved. A nine-step staircase and 1.5-metre fence passed the GPU fixture; this does not verify every source building or door.
+- Original supply-box opening now ejects 3D loot. Nearby supplies enter inventory; use E to take/equip weapons and G to throw a recovered frag model. Movement, outline, pickup and grenade logic are reconstructed Godot behavior. Two original pickup material bindings and original loot/grenade effect sound bindings remain unresolved.
+- Normal sprint includes the recovered original static offset plus movement loop.
+- Original dust and bullet-hole textures have not been positively identified. No temporary impact textures have been added.
+
+The updated browser reached the menu and Verdansk with no captured runtime/JavaScript errors. Music output was measured above zero. Known WebGL draw-buffer warnings and streaming stutter remain; full-match and 120-bot stability were not tested.
