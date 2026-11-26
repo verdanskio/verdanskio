@@ -34,7 +34,7 @@ The build reached the main menu and local Verdansk warmup with 21 participants. 
 
 Audio update: explicit Web Audio sample playback and gesture resume. Actual menu-music output was measured in Chromium; the earlier stream build produced zero output.
 
-## Interaction update — 26 November 2026
+## Interaction update â€” 26 November 2026
 
 - Mouse wheel zooms the tactical map under the cursor. Drag to pan; left-click to place a local ping; right-click to remove it. The recovered original ping image and location/confirmation audio are used. Pings appear on the map, minimap and in the world.
 - Coarse original terrain remains visible until the detailed tile is resident, reducing the blue circular holes. Original cloud texture is retained with capped sky fog blending.
@@ -44,3 +44,13 @@ Audio update: explicit Web Audio sample playback and gesture resume. Actual menu
 - Original dust and bullet-hole textures have not been positively identified. No temporary impact textures have been added.
 
 The updated browser reached the menu and Verdansk with no captured runtime/JavaScript errors. Music output was measured above zero. Known WebGL draw-buffer warnings and streaming stutter remain; full-match and 120-bot stability were not tested.
+
+## Stair, ping and equipment correction - 26 November 2026
+
+- Actual player movement with W and no jump input climbed the original concrete steps (model 31694), full construction staircase (32421), and narrow wooden step (33189). Capsule edge contacts and temporary loss of the floor flag no longer disable step assistance. This is not a verification of every source building.
+- The world ping uses the recovered original generic waypoint pin. It remains visible at a screen edge when behind the camera. Placement uses the original confirmation sample. An original removal sound is not yet resolved.
+- Press 4 to insert an armor plate; hold 4 to continue. Armor/inventory change at the insertion stage, rather than immediately. Fire, reload or weapon selection interrupt an unfinished plate without spending it. Original 80-frame hand keyframes and armor-plate geometry/material are connected.
+- Press/hold G to pull and cook a frag; release G to throw. Quick taps finish the pin-pull first. Holding too long detonates it in hand. Original 12-frame pull and 31-frame throw clips, source grenade geometry/base material, and original bounce audio are connected. Detonation applies distance/line-of-sight damage.
+- Native gesture IK/blending, separate pin/lever skin behavior, native explosive damage tuning, original detonation sound and original explosion VFX remain unresolved. No unrelated or procedural explosion effect has been substituted. Existing original-only dust/bullet-decal work remains pending.
+
+Equipment behavior and actual fire-input interruption passed native GPU tests. The final browser build was checked separately for menu/Verdansk startup, map/ping controls and nonzero music output; a complete browser match or 120-bot run was not performed.

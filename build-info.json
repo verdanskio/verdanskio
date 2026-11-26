@@ -1,8 +1,8 @@
 {
   "build_date": "2026-11-26",
   "kind": "experimental Godot HTML5 prototype",
-  "download_bytes": 696628633,
-  "pack_sha256": "540815c9f87c1f7ee8e705142dd89bdfd954f7b1d5242787723ad1c72dfd424e",
+  "download_bytes": 696852713,
+  "pack_sha256": "ff0d390a0ebedbce7112b24aa5afae7def0af0d4e16c7768342a1cbaa09275e8",
   "checks": {
     "main_menu_ready": true,
     "verdansk_ready": true,
@@ -10,11 +10,11 @@
   },
   "map_and_console_rendered_and_input_tested": true,
   "runtime_or_javascript_error_messages": 0,
-  "known_webgl_draw_buffer_warnings": 137,
+  "known_webgl_draw_buffer_warnings": 169,
   "full_match_or_120_bot_browser_test_performed": false,
   "audio": {
     "playback": "Web Audio sample",
-    "measured_music_rms": 0.041831891640563786,
+    "measured_music_rms": 0.04045961491697336,
     "context_state": "running",
     "user_gesture_resume": true
   },
@@ -29,5 +29,19 @@
     "temporary_impact_textures_used": false,
     "all_source_doors_verified": false,
     "original_money_plate_material_bindings_complete": false
+  },
+  "equipment": {
+    "timed_original_plate_gesture": true,
+    "plate_hold_to_repeat": true,
+    "plate_interrupt_on_fire_reload_switch": true,
+    "original_frag_pull_and_throw_clips": true,
+    "grenade_hold_cooking_and_remaining_fuse": true,
+    "original_grenade_bounce_audio": true,
+    "original_world_pin_and_confirm_audio": true,
+    "full_player_walk_three_original_stair_meshes_pass": true,
+    "original_explosion_vfx_restored": false,
+    "original_detonation_audio_restored": false,
+    "native_ik_and_full_equipment_skinning_parity": false,
+    "bounded_shared_equipment_material_cache": true
   }
 }
