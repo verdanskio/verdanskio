@@ -27,3 +27,7 @@ This is a browser export of the current native Godot prototype. Terrain uses eve
 Original speech samples are connected to implemented match events, not the complete native event graph. Native movement/IK, full map POI registration and some source meshes/material bindings remain unresolved. The browser version has additional WebGL/memory limitations; a 120-bot match is not promised.
 
 Use the local export report and browser-test report for the actual checks performed on this build.
+
+## Current browser test
+
+The build reached the main menu and local Verdansk warmup with 21 participants. Pointer lock, map and console input were checked. WebGL draw-buffer warnings remain and rendering/performance are experimental. A full browser match and 120 bots have not been validated. See `build-info.json`.

@@ -1,0 +1,15 @@
+{
+  "build_date": "2026-11-26",
+  "kind": "experimental Godot HTML5 prototype",
+  "download_bytes": 696328247,
+  "pack_sha256": "a481be187bc7baadbc3de19aa28cf9066d1fe0db09c516cad44b85baf53f0854",
+  "checks": {
+    "main_menu_ready": true,
+    "verdansk_ready": true,
+    "pointer_lock": true
+  },
+  "map_and_console_rendered_and_input_tested": true,
+  "runtime_or_javascript_error_messages": 0,
+  "known_webgl_draw_buffer_warnings": 79,
+  "full_match_or_120_bot_browser_test_performed": false
+}
