@@ -1,8 +1,8 @@
 {
-  "build_date": "2026-11-26",
+  "build_date": "2026-11-27",
   "kind": "experimental Godot HTML5 prototype",
-  "download_bytes": 697803899,
-  "pack_sha256": "253f3f65d1e1c8ed0adcdd99c840c0f6c2926c16aa5af7f41c601b3143253d74",
+  "download_bytes": 787906732,
+  "pack_sha256": "3c07e5adf60bb5fdec63e2859d2860e296770556d91c91920784215b0de65a2f",
   "checks": {
     "main_menu_ready": true,
     "verdansk_ready": true,
@@ -14,7 +14,7 @@
   "full_match_or_120_bot_browser_test_performed": false,
   "audio": {
     "playback": "Web Audio sample",
-    "measured_music_rms": 0.04045961491697336,
+    "measured_music_rms": 0.09028651538644056,
     "context_state": "running",
     "user_gesture_resume": true
   },
@@ -50,7 +50,7 @@
     "rifle_hidden_during_equipment": true,
     "original_frag_texture_layers_connected": 5
   },
-  "revision": "full-equipment-night-fov",
+  "revision": "x12-drop-terrain-vault-and-mw2019-menus",
   "settings_update": {
     "fov_slider_degrees": [
       60,
@@ -67,5 +67,30 @@
       "night": 26.00544500612745,
       "restored_day": 110.88606234681373
     }
+  },
+  "default_weapon": "X12 / pi_golf17",
+  "configured_bots": 60,
+  "full_60_bot_browser_match_test_performed": false,
+  "drop": {
+    "loadout_visible_seconds": 5,
+    "altimeter": "original terrain heightfield below player",
+    "flight_route": "DAM to Prison",
+    "original_sky_texture_unchanged": true
+  },
+  "menus": {
+    "original_game_build": "1.20.4.7623265",
+    "screens": [
+      "mode selection",
+      "Multiplayer lobby"
+    ],
+    "original_fonts": "Bio Sans Regular / Bold",
+    "original_menu_theme": true,
+    "original_ui_samples": 17,
+    "source_movies": 4,
+    "native_lossless_music_pcm_hash_verified": true,
+    "browser_both_screens_verified": true,
+    "browser_verdansk_started": true,
+    "original_3d_lobby_recovered": false,
+    "complete_original_ui_parity": false
   }
 }

@@ -57,3 +57,24 @@ The updated browser reached the menu and Verdansk with no captured runtime/JavaS
 - Full player movement without jumping previously passed three original stair meshes. The original world waypoint pin and confirmation sound remain connected.
 
 Validation: native GPU action/inventory/interruption and source-effect cleanup fixtures; 31 tree-model collision builders; reversible light changes; paused FOV; browser main menu and Verdansk startup; pointer lock, map, console commands and FOV interaction; nonzero music output. Known WebGL draw-buffer warnings remain. A full match and 120 bots have not been validated.
+
+## MW2019 menus - 27 November 2026
+
+The startup screen now uses the original MW2019 mode-selection background movie and Campaign, Multiplayer and Co-op blade movies. Their positions, invisible hit regions, idle captions and masked 200 ms reveal / 100 ms collapse are reconstructed from the local 1.20 UI scripts. Select Multiplayer to enter the second screen, the tabbed Multiplayer lobby.
+
+Both screens use the actual MW2019 Bio Sans Regular/Bold fonts. The original main-menu theme and 17 original focus, confirmation, back, deny, blade and tab samples were recovered from the local sound banks. The music is imported losslessly; its runtime PCM hash matches the recovered source. The Bink movies were converted to Theora and fully decode-checked.
+
+The Multiplayer lobby offers Play, Weapons, Operators, Barracks, Battle Pass and Store tabs. Quick Play starts the existing local Verdansk prototype; Private Match shows its actual BR map and bot count. Weapons selects the X12 (default), M4 or Kar98k starting weapon. Settings retains graphics, audio, FOV and input options. Keyboard, pointer and gamepad shoulder tab navigation are supported.
+
+This is a reconstruction in Godot, not a complete port of the original UI runtime. The original animated 3D Multiplayer lobby/operator scene is not recovered; its original fallback image is used. Campaign and Co-op gameplay, network challenges, store purchases and a complete original loadout system are not implemented. Not every widget, text effect or submenu has exact original parity.
+
+Validation: native rendered menu snapshots, all three blade videos, lossless music PCM, mode/lobby navigation, controller shoulder tabs, modal focus, Escape, settings and real starting weapon equip. Chromium also reached both new menus and the existing Verdansk scene, and measured audible music. This test does not validate a complete match or 120 bots.
+## Drop, pistol and terrain update - 27 November 2026
+
+The default starting weapon is now the recovered X12 / pi_golf17 pistol with its original component meshes, UVs, available textures, source animations and sound samples. Empty reload and last-round fire are connected. The locally available pistol albedos are only 64-128 pixels; this is not a recovered high-resolution texture set. Stationary weapons use recovered moving-idle data; the Kar98k uses shared additive hand/gun motion because a complete Kar-specific idle clip was not recovered.
+
+The altimeter samples the original 4097 x 4097 terrain heightfield under the player, independently of streamed collision loading. It reports terrain distance, not distance to a roof. The airborne loadout panel hides after five seconds. The original sky image is unchanged; cloud cards during the drop reuse that image. Flight runs from DAM toward Prison. Sixty prototype bots are prepared incrementally, frozen during flight, then redeployed after landing using staged clearance checks. They can open shared supply boxes and collect physical loot. This is reconstructed AI, not the native game's complete navigation and event logic.
+
+Original closed-box presence/hum and open samples are connected to supply crates. The source altimeter graphics are used with reconstructed layout. Shader depth bias, terrain coverage and source-height clipping of a specific grass material address observed stretched ground surfaces and z fighting. Explicit caulk/sky helper surfaces are excluded from appropriate visible/collision geometry. Roof-edge vaults can finish in open air while retaining clearance checks. The sky texture itself was not recolored.
+
+Validation: the current browser build reached both menu screens and Verdansk, with a running AudioContext and measured nonzero music. Native component and GPU fixtures passed pistol skinning/audio/reload, source-height sampling, the five-second panel timer, roof-edge vaulting, active idle and depth/grass clipping. Earlier native tests prepared and redeployed all 60 bots. A complete 60-bot browser match and every map location have not been validated; there is no claim of complete original-game parity or 120-bot support.
