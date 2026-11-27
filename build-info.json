@@ -1,8 +1,8 @@
 {
   "build_date": "2026-11-27",
   "kind": "experimental Godot HTML5 prototype",
-  "download_bytes": 787906732,
-  "pack_sha256": "3c07e5adf60bb5fdec63e2859d2860e296770556d91c91920784215b0de65a2f",
+  "download_bytes": 788040855,
+  "pack_sha256": "a08b0fc4f3277ac907a7c4d91d8b30285cf6dcd8f94e1a83eae87c855aacc171",
   "checks": {
     "main_menu_ready": true,
     "verdansk_ready": true,
@@ -14,7 +14,7 @@
   "full_match_or_120_bot_browser_test_performed": false,
   "audio": {
     "playback": "Web Audio sample",
-    "measured_music_rms": 0.09028651538644056,
+    "measured_music_rms": 0.10002681800181333,
     "context_state": "running",
     "user_gesture_resume": true
   },
@@ -50,7 +50,7 @@
     "rifle_hidden_during_equipment": true,
     "original_frag_texture_layers_connected": 5
   },
-  "revision": "x12-drop-terrain-vault-and-mw2019-menus",
+  "revision": "original-slide-legs-bot-loot-xp-and-bounded-landing",
   "settings_update": {
     "fov_slider_degrees": [
       60,
@@ -92,5 +92,20 @@
     "browser_verdansk_started": true,
     "original_3d_lobby_recovered": false,
     "complete_original_ui_parity": false
-  }
+  },
+  "browser_landing_checks": {
+    "bots_60_prepared": true,
+    "plane_started": true,
+    "landed_and_deployment_started": true,
+    "bots_60_redeployment_completed": true
+  },
+  "browser_landing_frame_ms": {
+    "samples": 924,
+    "p50": 16.69999999999709,
+    "p95": 33.39999999999418,
+    "max": 350
+  },
+  "original_distinct_kill_headshot_cues_recovered": false,
+  "original_slide_leg_triangles": 2674,
+  "elimination_xp": 100
 }
