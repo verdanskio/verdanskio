@@ -1,8 +1,8 @@
 {
-  "build_date": "2026-11-27",
+  "build_date": "2026-11-28",
   "kind": "experimental Godot HTML5 prototype",
-  "download_bytes": 788040855,
-  "pack_sha256": "a08b0fc4f3277ac907a7c4d91d8b30285cf6dcd8f94e1a83eae87c855aacc171",
+  "download_bytes": 788996352,
+  "pack_sha256": "07a6de2079d39e767db4baef209d6787f3d7ec4edf87bc7563b7a746aca62b86",
   "checks": {
     "main_menu_ready": true,
     "verdansk_ready": true,
@@ -107,5 +107,17 @@
   },
   "original_distinct_kill_headshot_cues_recovered": false,
   "original_slide_leg_triangles": 2674,
-  "elimination_xp": 100
+  "elimination_xp": 100,
+  "username_start_checks": {
+    "preloads_without_click": true,
+    "main_menu_ready": true,
+    "lobby_ready": true,
+    "canvas_rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900
+    },
+    "saved_name_restored": true
+  }
 }

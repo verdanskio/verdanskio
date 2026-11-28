@@ -2,7 +2,7 @@
 
 Unofficial Godot prototype using the existing reconstructed gameplay and recovered local assets. This is not the original Android engine and is not affiliated with Activision.
 
-Open the GitHub Pages website and click **Load game**. The complete asset download is large; use a recent desktop Chromium/Firefox browser with WebGL 2 and hardware acceleration. First loading can take several minutes. Keep the tab open while loading.
+Open the GitHub Pages website and choose a username and click **Enter Verdansk**. The complete asset download is large; use a recent desktop Chromium/Firefox browser with WebGL 2 and hardware acceleration. First loading can take several minutes. Keep the tab open while loading.
 
 ## Controls
 
@@ -92,3 +92,9 @@ Audio: the existing recovered ui_hitmarker_classic and armor-break samples remai
 Landing: wait briefly before incremental bot activation, stagger target decisions and source animation advancement, simulate distant bots at 15 Hz and close bots at 30 Hz with distance-preserving movement. Source collider triangles are partitioned into batches of at most 2048 triangles per BVH build. Continuous swept ballistic rays adapt their subdivisions to a 1 cm parabolic chord-error bound rather than performing four identical near-linear sweeps each normal frame. NPC bullet pressure is bounded separately from player shots. Inactive prop/model/collider and world texture-cache references are released during streaming.
 
 Tests: source slide rendered on NVIDIA/OpenGL; inventory/death/XP fixture passed; exact collider triangle preservation passed. Real Verdansk loaded, prepared and redeployed all 60 bots in the headless native fixture. In one local comparison the 95th percentile activation frame changed from 64.81 ms to 22.041 ms (median 16.658 ms). These timings are a local headless measurement, not a guarantee for all browsers or a completed battle royale match. See artifacts/landing-budget-profile.json for the current measurements. Chromium also completed the 60-bot preparation, flight, fall, landing and staged activation, and rendered first-person slide legs without script/JavaScript errors. During the browser landing/activation sample, frame timing was median 16.7 ms, 95th percentile 33.4 ms and maximum 350 ms. Occasional asset-loading spikes remain; a full match was not completed.
+
+## Local username start screen — 2026-11-28
+
+The browser starts downloading the engine and map files when the page opens. Choose a local username and press **Enter Verdansk** to open the main menu. There is one username field, no email or password. The name is saved in this browser's local storage and used by the lobby, identity panel and match HUD. It is a local display name, not an Activision account or a globally reserved username.
+
+The dark two-column start screen follows the supplied reference style and uses recovered menu fonts and a recovered background. The page fills the browser viewport. Validated in Chromium: automatic preload before clicking, empty-name validation, main-menu launch, saved name restored on reload, and full-size canvas at 1440×900.
