@@ -1,8 +1,8 @@
 {
   "build_date": "2026-11-28",
   "kind": "experimental Godot HTML5 prototype",
-  "download_bytes": 788996352,
-  "pack_sha256": "07a6de2079d39e767db4baef209d6787f3d7ec4edf87bc7563b7a746aca62b86",
+  "download_bytes": 823758002,
+  "pack_sha256": "9f6d95154040606ed94f5f71fda1c59116495181974cc74f971e430802c4ab87",
   "checks": {
     "main_menu_ready": true,
     "verdansk_ready": true,
@@ -119,5 +119,26 @@
       "height": 900
     },
     "saved_name_restored": true
-  }
+  },
+  "release": "gameplay-and-assets",
+  "web_smoke_checks": {
+    "main_menu_ready": true,
+    "lobby_ready": true,
+    "verdansk_ready": true,
+    "bots_60_prepared": true,
+    "plane_started": true,
+    "briefing_completed": true,
+    "first_bot_exited_aircraft": true,
+    "bots_60_redeployment_completed": true,
+    "gameplay_controls_dispatched": true
+  },
+  "webgl_warning_count": 256,
+  "remaining_fidelity_limits": [
+    "Original aircraft horn unidentified",
+    "Collision-derived navigation, original WZM navigation binary not recovered",
+    "Reconstructed traversal constants",
+    "Resident bullet mask only",
+    "Terrain/texture/performance issues may remain",
+    "Pre-existing Chromium WebGL draw-buffer warnings"
+  ]
 }

@@ -98,3 +98,22 @@ Tests: source slide rendered on NVIDIA/OpenGL; inventory/death/XP fixture passed
 The browser starts downloading the engine and map files when the page opens. Choose a local username and press **Enter Verdansk** to open the main menu. There is one username field, no email or password. The name is saved in this browser's local storage and used by the lobby, identity panel and match HUD. It is a local display name, not an Activision account or a globally reserved username.
 
 The dark two-column start screen follows the supplied reference style and uses recovered menu fonts and a recovered background. The page fills the browser viewport. Validated in Chromium: automatic preload before clicking, empty-name validation, main-menu launch, saved name restored on reload, and full-size canvas at 1440×900.
+
+## Gameplay and asset update — 2026-11-28
+
+This release includes the current gameplay changes, alongside the Verdanskio username page:
+
+- Corrected loading-screen columns, original loading artwork, moving background and completion cue.
+- Higher-resolution original hand textures, recovered fist locomotion and separate left/right punches.
+- Grenade model attached to the animated palm; quieter, non-stacking prone audio; faster semi-automatic X12 input.
+- Directional parachute hand poses; fall damage and upward ascender interactions with recovered models, animations and attach/detach sounds.
+- Original resident MW2019 bullet-hole mask and small original-texture muzzle smoke.
+- Separate close-up weapon rendering to improve world-camera depth precision.
+- Recovered 2048px original MW2019 Verdansk HDR sky, preserving original texture data with explicit preview exposure normalization.
+- Developer console using the recovered MW2019 developer font, command history and completion.
+- Aircraft drops gated on completed narration, spread over the moving Dam-to-Prison flight route with distributed landing targets and original red-trail density.
+- Local bot navigation generated from recovered collision geometry.
+
+Validation: script compilation; three loading-screen resolutions; rendered loading screen and HDR sky; palm attachment; fist motion and pistol timing; fall-damage/parachute protection; aircraft narration gate, actual plane exits and target separation; navigation around a wall; Chromium main-menu, map, 60-participant flight and deployment smoke test.
+
+Remaining fidelity limits: traversal/fall constants and parts of the animation controllers are reconstructed, not the original native engine. The navigation mesh is generated from recovered collisions; the original WZM navmesh binary has not been recovered. The precise aircraft horn remains unidentified and is not substituted. Bullet marks currently use the original resident 32px mask, not its unrecovered full 512px streamed atlas. This update does not establish that every terrain overlap, texture discrepancy or performance hitch is resolved. Chromium still reports the pre-existing WebGL draw-buffer warnings; these are recorded separately from script/JavaScript errors. During the unattended drop test the player was eliminated after landing, so post-deployment input dispatch is not a successful live-combat validation.
